@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object>
+
+	<Property Type="1" shoot="1220" pass="1000" reel="1000" def="990" trick="1000" steal="1000" control="1500" keep="1485" material="102007,102008"/>
+	<Property Type="2" shoot="2440" pass="2000" reel="2000" def="1980" trick="2000" steal="2000" control="3000" keep="2970" material="102007,102008"/>
+	<Property Type="3" shoot="3660" pass="3000" reel="3000" def="2970" trick="3000" steal="3000" control="4500" keep="4455" material="102007,102008"/>
+	<Property Type="4" shoot="4880" pass="4000" reel="4000" def="3960" trick="4000" steal="4000" control="6000" keep="5940" material="102007,102008"/>
+	<Property Type="5" shoot="6100" pass="5000" reel="5000" def="4950" trick="5000" steal="5000" control="7500" keep="7425" material="102007,102008"/>
+	</Object>

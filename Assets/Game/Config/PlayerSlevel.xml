@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object>
+
+	<Property id="6" shoot="0" pass="0" reel="0" def="0" trick="0" steal="0" control="0" keep="0" material="0,0"/>
+	<Property id="5" shoot="800" pass="400" reel="400" def="400" trick="400" steal="400" control="600" keep="600" material="102014,10;102015,7;102016,2"/>
+	<Property id="4" shoot="560" pass="280" reel="280" def="280" trick="280" steal="280" control="420" keep="420" material="102014,5;102015,3"/>
+	<Property id="3" shoot="320" pass="160" reel="160" def="160" trick="160" steal="160" control="240" keep="240" material="102013,5;102014,3"/>
+	<Property id="2" shoot="40" pass="20" reel="20" def="20" trick="20" steal="20" control="30" keep="30" material="102013,3"/>
+	</Object>

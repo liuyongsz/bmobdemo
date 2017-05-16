@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!--点属性表
+pos      		位置索引
+powerPer   		威力系数
+distance   		距离
+-->
+<Object>
+	<Property pos="12" powerPer="0.6" distance="27" bound="1"/>
+	<Property pos="13" powerPer="0.7" distance="20" bound="1"/>
+	<Property pos="14" powerPer="1.2" distance="13" bound="0"/>
+	<Property pos="15" powerPer="1.4" distance="5" bound="0"/>
+	<Property pos="16" powerPer="1.2" distance="13" bound="0"/>
+	<Property pos="17" powerPer="0.7" distance="20" bound="1"/>
+	<Property pos="18" powerPer="0.6" distance="27" bound="1"/>
+	<Property pos="22" powerPer="0.85" distance="30" bound="1"/>
+	<Property pos="23" powerPer="1.1" distance="23" bound="1"/>
+	<Property pos="24" powerPer="1.2" distance="17" bound="0"/>
+	<Property pos="25" powerPer="1.3" distance="13" bound="0"/>
+	<Property pos="26" powerPer="1.2" distance="17" bound="0"/>
+	<Property pos="27" powerPer="1.1" distance="23" bound="1"/>
+	<Property pos="28" powerPer="0.85" distance="30" bound="1"/>
+	<Property pos="32" powerPer="0.8" distance="31" bound="1"/>
+	<Property pos="33" powerPer="0.9" distance="27" bound="1"/>
+	<Property pos="34" powerPer="1.0" distance="23" bound="0"/>
+	<Property pos="35" powerPer="1.0" distance="20" bound="0"/>
+	<Property pos="36" powerPer="1.0" distance="23" bound="0"/>
+	<Property pos="37" powerPer="0.9" distance="27" bound="1"/>
+	<Property pos="38" powerPer="0.8" distance="31" bound="1"/>
+	<Property pos="42" powerPer="0.7" distance="34" bound="1"/>
+	<Property pos="43" powerPer="0.8" distance="30" bound="0"/>
+	<Property pos="44" powerPer="0.9" distance="27" bound="0"/>
+	<Property pos="45" powerPer="0.9" distance="24" bound="0"/>
+	<Property pos="46" powerPer="0.9" distance="27" bound="0"/>
+	<Property pos="47" powerPer="0.8" distance="30" bound="0"/>
+	<Property pos="48" powerPer="0.7" distance="34" bound="1"/>
+	<Property pos="53" powerPer="0.6" distance="35" bound="0"/>
+	<Property pos="54" powerPer="0.7" distance="32" bound="0"/>
+	<Property pos="55" powerPer="0.8" distance="28" bound="0"/>
+	<Property pos="56" powerPer="0.7" distance="32" bound="0"/>
+	<Property pos="57" powerPer="0.6" distance="35" bound="0"/>
+	
+	
+</Object>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object>
+  <Property ID="0" winnerReward="104003,1;104006,5"/>
+	<Property ID="1" robRewardID="104003,1;104006,5" rewardID="104003,1;104006,5"/>
+	<Property ID="2" robRewardID="104003,1;104006,6" rewardID="104003,1;104006,6"/>
+	<Property ID="3" robRewardID="104003,1;104006,7" rewardID="104003,1;104006,7"/>
+	<Property ID="4" robRewardID="104003,1;104006,8" rewardID="104003,1;104006,8"/>
+	<Property ID="5" robRewardID="104003,1;104006,9" rewardID="104003,1;104006,9"/>
+	<Property ID="6" robRewardID="104003,1;104006,10" rewardID="104003,1;104006,10"/>
+	<Property ID="7" robRewardID="104003,1;104006,11" rewardID="104003,1;104006,11"/>
+	<Property ID="8" robRewardID="104003,1;104006,12" rewardID="104003,1;104006,12"/>
+	<Property ID="9" robRewardID="104003,1;104006,13" rewardID="104003,1;104006,13"/>
+	<Property ID="10" robRewardID="104003,1;104006,14" rewardID="104003,1;104006,14"/>
+	<Property ID="11" robRewardID="104003,1;104006,15" rewardID="104003,1;104006,15"/>
+	<Property ID="31" robRewardID="104003,1;104006,16" rewardID="104003,1;104006,16"/>
+	<Property ID="61" robRewardID="104003,1;104006,17" rewardID="104003,1;104006,17"/>
+	<Property ID="100" robRewardID="104003,1;104006,18" rewardID="104003,1;104006,18"/>
+	</Object>

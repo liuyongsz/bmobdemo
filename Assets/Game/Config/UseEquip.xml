@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object>
+	<Property id="2" exp="5" money="500"/>
+	<Property id="3" exp="10" money="1000"/>
+	<Property id="4" exp="20" money="2000"/>
+	<Property id="5" exp="40" money="5000"/>
+	</Object>
