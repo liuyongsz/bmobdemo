@@ -1,5 +1,0 @@
-xlua.hotfix(CS.#NAME#, {
- Init = function(self)
-    
- end
-})
