@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object>
+	<Property id="10000" type="1" addvalue="shoot" lockadd="steal" locklevel="10" percenttype="0" maxlevel="20" initstar="5" maxstar="6" worthvalue="101"/>
+	<Property id="11000" type="2" addvalue="reel" lockadd="defend" locklevel="10" percenttype="1" maxlevel="20" initstar="5" maxstar="6" worthvalue="102"/>
+	<Property id="12000" type="3" addvalue="defend" lockadd="passBall" locklevel="10" percenttype="0" maxlevel="20" initstar="5" maxstar="6" worthvalue="103"/>
+	<Property id="13000" type="4" addvalue="trick" lockadd="shoot" locklevel="10" percenttype="1" maxlevel="20" initstar="5" maxstar="6" worthvalue="104"/>
+	<Property id="14000" type="5" addvalue="controll" lockadd="controll" locklevel="10" percenttype="1" maxlevel="20" initstar="5" maxstar="6" worthvalue="105"/>
+	<Property id="20000" type="1" addvalue="shoot" lockadd="steal" locklevel="10" percenttype="0" maxlevel="20" initstar="5" maxstar="6" worthvalue="106"/>
+	<Property id="21000" type="2" addvalue="reel" lockadd="defend" locklevel="10" percenttype="1" maxlevel="20" initstar="5" maxstar="6" worthvalue="107"/>
+	<Property id="22000" type="3" addvalue="defend" lockadd="passBall" locklevel="10" percenttype="0" maxlevel="20" initstar="5" maxstar="6" worthvalue="108"/>
+	<Property id="23000" type="4" addvalue="trick" lockadd="shoot" locklevel="10" percenttype="1" maxlevel="20" initstar="5" maxstar="6" worthvalue="109"/>
+	<Property id="24000" type="5" addvalue="controll" lockadd="controll" locklevel="10" percenttype="1" maxlevel="20" initstar="5" maxstar="6" worthvalue="110"/>
+	</Object>

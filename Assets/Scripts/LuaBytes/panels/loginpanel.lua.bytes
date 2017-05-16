@@ -1,0 +1,9 @@
+xlua.hotfix(CS.LoginMediator, {
+
+ OnShow = function(self)
+    print("fromlua====OnStart")
+	print("Hello Lua")
+	local luaM2 = CS.Facade
+    luaM2:SendNotification(CS.NotificationID.Bag_Show)
+ end
+})

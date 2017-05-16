@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+<<<<<<< .mine
+guid: 1b894ff50cc1e524ca3640e725aa362a
+timeCreated: 1493087084
+||||||| .r5651
+guid: 80683411134adc542bb74f4b87c914cf
+timeCreated: 1493123216
+=======
+guid: 38296cf9b839f874384710b257b5e89e
+timeCreated: 1493195888
+>>>>>>> .r5700
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

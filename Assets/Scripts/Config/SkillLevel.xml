@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 被2013 sp1 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2011 (http://www.altova.com) by 233 (TeaM DJiNN) -->
+<!--
+ID 技能ID
+-->
+<Object>
+	<Property ID="1" upTime="1" limit="6"/>
+	<Property ID="2" upTime="2" limit="12"/>
+	<Property ID="3" upTime="3" limit="18"/>
+	<Property ID="4" upTime="4" limit="24"/>
+	<Property ID="5" upTime="5" limit="30"/>
+	<Property ID="6" upTime="6" limit="36"/>
+	<Property ID="7" upTime="7" limit="42"/>
+	<Property ID="8" upTime="8" limit="48"/>
+	<Property ID="9" upTime="9" limit="54"/>
+	<Property ID="10" upTime="10" limit="60"/>
+	<Property ID="11" upTime="11" limit="66"/>
+	<Property ID="12" upTime="12" limit="72"/>
+	<Property ID="13" upTime="13" limit="78"/>
+	<Property ID="14" upTime="14" limit="84"/>
+	<Property ID="15" upTime="15" limit="90"/>
+	<Property ID="16" upTime="16" limit="96"/>
+	<Property ID="17" upTime="17" limit="102"/>
+	<Property ID="18" upTime="18" limit="108"/>
+	<Property ID="19" upTime="19" limit="114"/>
+	<Property ID="20" upTime="20" limit="120"/>
+	<Property ID="21" upTime="21" limit="126"/>
+	<Property ID="22" upTime="22" limit="132"/>
+	<Property ID="23" upTime="23" limit="138"/>
+	<Property ID="24" upTime="24" limit="144"/>
+	<Property ID="25" upTime="25" limit="150"/>
+	<Property ID="26" upTime="26" limit="156"/>
+	<Property ID="27" upTime="27" limit="162"/>
+	<Property ID="28" upTime="28" limit="168"/>
+	<Property ID="29" upTime="29" limit="174"/>
+	<Property ID="30" upTime="30" limit="180"/>
+</Object>
