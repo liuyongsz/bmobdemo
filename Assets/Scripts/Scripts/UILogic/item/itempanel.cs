@@ -247,31 +247,7 @@ public class ItemMediator : UIMediator<itempanel>
             UPMentalityBtn = m_Panel.transform.FindChild("ballerUpMentality/UPMentalityBtn").GetComponent<UISprite>();
             UIEventListener.Get(UPMentalityBtn.gameObject).onClick = OnClick;
             m_Panel.ballerUpMentality.gameObject.SetActive(true);
-            TeamMediator.mentalityPanel.canClick = true;
-            for (int i = 0; i < UPMentality.Length; ++i)
-            {
-                string desc = string.Empty;
-                UPMentality[i].value = true;
-                foreach (MentalityUpItem item in MentalityPanel.mentalityUpList.Values)
-                {
-                    if (UtilTools.IntParse(item.Name[0].ToString()) == i)
-                    {
-                        if (item.Value < 0)
-                        {
-                            desc += UtilTools.StringBuilder(TextManager.GetUIString(item.Name.Substring(1)), item.Value, "  ");
-                        }
-                        else
-                        {
-                            desc += UtilTools.StringBuilder(TextManager.GetUIString(item.Name.Substring(1)), " +", item.Value, "  ");
-                        }
-                        if (UPMentality[i].value)
-                        {
-                            UPMentality[i].value = item.Value > 0;
-                        }
-                    }
-                }
-                mentalityDesc[i].text = UtilTools.StringBuilder(string.Format(TextManager.GetUIString("UINumber"), i + 1), ": ", desc);
-            }
+           
         }
         else if (panelType == PanelType.SwitchInherit)
         {
@@ -379,34 +355,11 @@ public class ItemMediator : UIMediator<itempanel>
         }
         else if (go == m_Panel.CloseBtn.gameObject)
         {
-            if (MentalityPanel.mentalityUpList.Count > 0)
-            {
-                MentalityPanel.mentalityUpList.Clear();
-            }
-            ClosePanel(null);
         }
         else if (maxBtn != null && go == maxBtn.gameObject)
         {
             changeNum.text = info.amount.ToString();
             sellPrcie.text = (info.amount * item.itemPrice).ToString();
-        }
-        else if (UPMentalityBtn != null && go == UPMentalityBtn.gameObject)
-        {
-            List<object> list = new List<object>();
-            // 提升意识
-            for (int i = 0; i < UPMentality.Length; ++i)
-            {
-                if (UPMentality[i].value)
-                {
-                    Dictionary<string, object> info = new Dictionary<string, object>();
-                    info.Add("index", i);
-                    list.Add(info);
-                }
-            }
-            Dictionary<string, object> listDic = new Dictionary<string, object>();
-            listDic.Add("values", list);
-            ServerCustom.instance.SendClientMethods("ChooseUpMentalityInfo", TeamMediator.currentTeamBaller.id, listDic);
-            ClosePanel(null);
         }
         else if (go == m_Panel.Mask.gameObject)
         {
@@ -426,39 +379,11 @@ public class ItemMediator : UIMediator<itempanel>
     }
     void UpdateInheriter(UIGridItem item)
     {
-        if (item == null || item.mScripts == null || item.oData == null)
-            return;
-        item.onClick = ChooseBaller;
-        TeamBaller baller = item.oData as TeamBaller;
-        UILabel Name = item.mScripts[0] as UILabel;
-        UISprite color = item.mScripts[1] as UISprite;
-        UITexture head = item.mScripts[2] as UITexture;
-        UISlider slider = item.mScripts[3] as UISlider;
-        UITexture stars = item.mScripts[5] as UITexture;
-        UILabel Level = item.mScripts[6] as UILabel;
-        UILabel Num = item.mScripts[7] as UILabel;
-        PlayerItem info = PlayerManager.GetPlayerItem(baller.level);
-        slider.value = baller.exp * 1.0f / info.needExp;
-        Num.text = UtilTools.StringBuilder(baller.exp, "/", info.needExp);
-        Level.text = "Lv " + baller.level;
-        Name.text = TextManager.GetItemString(baller.configId);
-        color.spriteName = UtilTools.StringBuilder("color" + baller.star);
-        LoadSprite.LoaderHead(head, UtilTools.StringBuilder("Card" + baller.configId), false);
-        TD_Player player = Instance.Get<PlayerManager>().GetItem(int.Parse(baller.configId));
-        UtilTools.SetStar(baller.star, stars.GetComponentsInChildren<UISprite>(), player.maxstar);
+       
     }
     void ChooseBaller(UIGridItem item)
     {
-        if (panelType == PanelType.SwitchInherit)
-        {
-            TeamBaller baller = item.oData as TeamBaller;
-            TeamMediator.inheritPanel.CheckInheriter(baller.configId);
-            Facade.SendNotification(NotificationID.ItemInfo_Hide);
-        }
-        else
-        {
-
-        }
+       
     }
     /// <summary>
     /// 界面关闭时调用

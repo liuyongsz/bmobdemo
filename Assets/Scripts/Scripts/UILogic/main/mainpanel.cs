@@ -86,7 +86,7 @@ public class MainMediator : UIMediator<mainpanel>
         {
             //Facade.SendNotification(NotificationID.BallerClip_Show);
             Facade.SendNotification(NotificationID.Gold_Hide);
-            CloneProxy.Instance.onClientReqEnterClone();
+
             ClosePanel(null);
         }
         else if (go == m_Panel.headicon.gameObject)

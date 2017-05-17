@@ -317,19 +317,7 @@ public class CardMediator : UIMediator<cardpanel>
     }
     void AddBallerGrid(string index)
     {
-        List<object> listObj = new List<object>();
-        TD_Player player;
-        MaterialItemInfo item;
-        foreach (RewardInfo info in PieceSwitchConfig.configList.Values)
-        {
-            item = ItemManager.GetMaterialInfo(info.itemID);
-            player = Instance.Get<PlayerManager>().GetItem(item.materialId);
-            if (player.jobIndex.Contains(index))
-            {
-                listObj.Add(info);
-            }
-        }
-        m_Panel.PieceGrid.AddCustomDataList(listObj);
+
     }
     /// <summary>
     /// GridItem点击事件
@@ -397,13 +385,7 @@ public class CardMediator : UIMediator<cardpanel>
             ItemInfo info = ItemManager.GetItemInfo(rewardInfo.itemID);
             color.spriteName = UtilTools.StringBuilder("color" + info.color);
         }
-        else if (rewardInfo.itemType == 7)
-        {
-            TD_Player player = Instance.Get<PlayerManager>().GetItem(UtilTools.IntParse(rewardInfo.itemID));
-            LoadSprite.LoaderHead(head, "Card" + player.id.ToString(), false);
-            color.spriteName = UtilTools.StringBuilder("color" + player.initialstar);
-            UtilTools.SetStar(player.initialstar, star, player.maxstar);
-        }
+
     }
     /// <summary>
     /// 更新界面数据

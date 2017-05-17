@@ -60,14 +60,8 @@ public class ViewCommand: SimpleCommand
         Facade.RegisterMediator(new PowerMediator());
         Facade.RegisterMediator(new ChatMediator());
         Facade.RegisterMediator(new BagMediator());
-        Facade.RegisterMediator(new BabyMediator());
         Facade.RegisterMediator(new ItemMediator());
-        Facade.RegisterMediator(new TeamMediator());
-        Facade.RegisterMediator(new BallerLevelMediator()); 
-        Facade.RegisterMediator(new ui_balloperMediator());
         Facade.RegisterMediator(new ui_opertestMediator());
-        Facade.RegisterMediator(new ui_matchInfoMediator());
-        Facade.RegisterMediator(new ui_matchInfoMediator());
         Facade.RegisterMediator(new ServerMediator());
         Facade.RegisterMediator(new LoginMediator());
         Facade.RegisterMediator(new UpdateResourcesMediator());
@@ -82,13 +76,7 @@ public class ViewCommand: SimpleCommand
         Facade.RegisterMediator(new GemChooseMediator());
         Facade.RegisterMediator(new EquipInheritMediator());
         Facade.RegisterMediator(new GemCompoundMediator());
-        Facade.RegisterMediator(new TeamFormineMediator());
-        Facade.RegisterMediator(new BenchMediator()); 
-        Facade.RegisterMediator(new BenchChooseMediator());
-        Facade.RegisterMediator(new FormationPropActiveMediator());
-        Facade.RegisterMediator(new CheckpointMediator());
         Facade.RegisterMediator(new GameShopMediator());
-        Facade.RegisterMediator(new ArenaMediator());
         Facade.RegisterMediator(new BuyItemMediator());
         Facade.RegisterMediator(new RankMediator());
         Facade.RegisterMediator(new GuildListMediator());
@@ -105,9 +93,7 @@ public class ViewCommand: SimpleCommand
         Facade.RegisterMediator(new GuildInteractMediator());
         Facade.RegisterMediator(new GuildTacticMediator());
         Facade.RegisterMediator(new GuildCounselorMediator());
-        Facade.RegisterMediator(new SandTableMediator());
         Facade.RegisterMediator(new WorldBossMediator());
-        Facade.RegisterMediator(new BattleEndMediator());
     }
 }
 

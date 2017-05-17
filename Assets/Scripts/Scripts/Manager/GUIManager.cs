@@ -213,14 +213,7 @@ public class GUIManager
     {
         ResourceManager.Instance.LoadPrefab("playerformation", (name, obj) =>
         {
-            if (obj == null)
-                return;
-            obj.AddComponent<PlayerFormation>();
-            PlayerFormation formation = obj.GetComponent<PlayerFormation>();
-            formation.enemyFormation = info.formation;
-            formation.enemyfigthValue = info.fightValue;
-            formation.enemy = info.playerName;
-            UtilTools.SetParentWithPosition(obj.transform, UICamera.mainCamera.transform, Vector3.zero, Vector3.one);
+           
         });
     }
 

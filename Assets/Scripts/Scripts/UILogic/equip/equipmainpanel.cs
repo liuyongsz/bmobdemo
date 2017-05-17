@@ -240,54 +240,7 @@ public class EquipMediator : UIMediator<equipmainpanel>
     }
     private void OnUpdateDataRow(UIGridItem item)
     {
-        if (item == null || item.mScripts == null || item.oData == null)
-            return;
-        item.onClick = ClickPlayerItem;
-        int player_id = GameConvert.IntConvert(item.oData);
-
-        UISprite color = item.mScripts[1] as UISprite;
-        UITexture icon = item.mScripts[2] as UITexture;
-        UILabel name = item.mScripts[3] as UILabel;
-        UILabel player_level = item.mScripts[4] as UILabel;
-        UILabel text = item.mScripts[5] as UILabel;
-        UITexture star = item.mScripts[6] as UITexture;
-        MyUIToggle toggle = item.transform.GetComponent<MyUIToggle>();
-
-        GameObject bg_lv = item.transform.FindChild("bg_lv").gameObject;
-        bg_lv.SetActive(player_id > 0);
-
-        //Transform bg = item.transform.FindChild("bg");
-        //bg.gameObject.SetActive(player_id > 0);
-
-        TeamBaller player = EquipConfig.GetTeamBallerById(player_id);
-
-        toggle.Value = player_id == cur_select_player_id;
-        if (player_id > 0)
-            color.spriteName = "color" + player.star;
-
-        UISprite[] player_star = UtilTools.GetChilds<UISprite>(item.transform, "star");
-
-        string content = player_id > 0 ? "UI1087" : "UI2017";
-
-        text.text=TextManager.GetUIString(content);
-        
-        star.transform.gameObject.SetActive(player_id>0);
-
-        if (player_id == 0)
-        {
-            name.text = "";
-            player_level.text = "";
-            LoadSprite.LoaderItem(icon, "101503", false);
-            return;
-        }
-
-        name.text = TextManager.GetItemString(player.configId);
-        player_level.text = player.level.ToString();
-
-        LoadSprite.LoaderHead(icon, "Card"+ player.configId, false);
-
-        UtilTools.SetStar(player.star, player_star);
-
+       
 
     }
     private void SetPlayerInfo()
@@ -518,26 +471,8 @@ public class EquipMediator : UIMediator<equipmainpanel>
     /// <returns></returns>
     private int ComparePlayer(int id1,int id2)
     {
-        TeamBaller player1 = EquipConfig.GetTeamBallerById(id1);
-        TeamBaller player2 = EquipConfig.GetTeamBallerById(id2);
 
-        int in_team1 = player1 == null ? 0 : player1.inTeam;
-        int in_team2 = player2 == null ? 0 : player2.inTeam;
-        int is_self1 = player1 == null ? 0 : player1.isSelf;
-        int is_self2 = player2 == null ? 0 : player2.isSelf;
-
-        if (is_self1 > is_self2)
-            return -1;
-        else if (is_self1 < is_self2)
-            return 1;
-        else if (in_team1 > in_team2)
-            return -1;
-        else if (in_team1 < in_team2)
-            return 1;
-        else if (id1 > id2)
-            return -1;
-        else if (id1 < id2)
-            return 1;
+       
 
         return 0;
     }

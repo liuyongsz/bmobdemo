@@ -84,30 +84,8 @@ public class EquipConfig : ConfigLoaderBase
                     list.Add(card_id);
         }
 
-        var card_enumerator = TeamMediator.teamList.Values.GetEnumerator();
-        while (card_enumerator.MoveNext())
-        {
-            card_id = card_enumerator.Current.id;
-            if (card_enumerator.Current.inTeam>0)
-                if (!list.Contains(card_id))
-                    list.Add(card_id);
-        }
+
         return list;
-    }
-    /// <summary>
-    /// 通过ID 获取球员信息
-    /// </summary>
-    /// <param name="playerId"></param>
-    /// <returns></returns>
-    public static TeamBaller GetTeamBallerById(int playerId)
-    {
-        var enumerator = TeamMediator.teamList.Values.GetEnumerator();
-        while (enumerator.MoveNext())
-        {
-            if (enumerator.Current.id == playerId)
-                return enumerator.Current;
-        }
-        return null;
     }
 
     /// <summary>

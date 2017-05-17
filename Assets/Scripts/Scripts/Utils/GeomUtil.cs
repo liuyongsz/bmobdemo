@@ -41,16 +41,7 @@ public class GeomUtil
     /// <returns></returns>
     public static bool Match_InFront(Vector3 self, Vector3 target)
     {
-        if (MatchManager.IsAtkLeft)
-        {
-            if (self.z < target.z)
-                return false;
-        }
-        else
-        {
-            if (self.z > target.z)
-                return false;
-        }
+
 
         return true;
     }

@@ -112,9 +112,6 @@ public class BallerRelateConfig : ConfigLoaderBase
                 if (!data.ballerList.Contains(id) && id != 0)
                     data.ballerList.Add(id);
 
-                if (isActive)
-                    isActive = IsBallerInteamOrBench(id.ToString());
-
                 string propStr = "prop" + (j + 1);
                 string propContent = GameConvert.StringConvert(info.GetType().GetField(propStr).GetValue(info));
 
@@ -133,26 +130,6 @@ public class BallerRelateConfig : ConfigLoaderBase
         return rela_list;
 
     }
-
-
-    //是否上阵和替补
-    public static  bool IsBallerInteamOrBench(string configId)
-    {
-        var card_enumerator = TeamMediator.teamList.Values.GetEnumerator();
-        while (card_enumerator.MoveNext())
-        {
-            if (card_enumerator.Current.configId == configId)
-            {
-                if (card_enumerator.Current.inTeam == 1 || card_enumerator.Current.bench == 1)
-                    return true;
-            }
-
-        }
-        return false;
-
-    }
-
-
 }
 
 //球员羁绊信息

@@ -11,8 +11,6 @@ class SceneCommand : SimpleCommand
     {
         SceneVO msg = notification.Body as SceneVO;
 
-        CommonFun.Players = null;
-        CommonFun.Oponents = null;
         GUIManager.ShowLoadingUI();
 
         if (NotificationID.CHANGE_SCENE==notification.Name)
@@ -25,7 +23,7 @@ class SceneCommand : SimpleCommand
 
             if(msg.scenetype == EScene.PVE)
             {
-                CloneProxy.Instance.Send_EnterClone(CloneProxy.Instance.IntoCloneID);
+
             }
 
             isLoadingScene = true;
@@ -66,7 +64,6 @@ class SceneCommand : SimpleCommand
         GUIManager.HideLoadingUI();
         GameProxy.Instance.RealEnterScene(vo.sceneName, vo.scenetype);
 
-        CommonFun.Debug("CHANGE_SCENE : " + vo.sceneName);
         //卸载场景assetboundle
 
         AssetManager.UnloadAssetBundle(vo.abname);

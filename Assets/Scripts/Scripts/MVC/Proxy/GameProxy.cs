@@ -88,7 +88,6 @@ public class GameProxy : Proxy<GameProxy>
         BossRewardConfig.Init();
         InstanceProxy.Get<PieceSwitchConfig>().LoadXml();
         InstanceProxy.Get<PlayerPositionConfig>().LoadXml();
-        InstanceProxy.Get<PlayerManager>().Init();
         InstanceProxy.Get<MatchArrayConfig>().LoadXml();
         InstanceProxy.Get<PositionAttributeConfig>().LoadXml();
         InstanceProxy.Get<RandNameConfig>().LoadXml();
@@ -113,7 +112,6 @@ public class GameProxy : Proxy<GameProxy>
 
     public void GotoPVE(int cloneId = 1001)
     {
-        CloneProxy.Instance.IntoCloneID = cloneId;
         //UnityEngine.SceneManagement.SceneManager.LoadScene("s_footballmatch");
         Facade.SendNotification(NotificationID.CHANGE_SCENE, new SceneVO("s_match1", "s_match1", false, EScene.PVE));
     }

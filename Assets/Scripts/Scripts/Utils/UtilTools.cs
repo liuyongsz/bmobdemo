@@ -1196,23 +1196,6 @@ public class UtilTools
         grid.cellHeight = cellHeight;
     }
 
-
-    public static List<ConSuleItem> SetConSumeItemList(int index, Transform go)
-    {
-        List<ConSuleItem> ConSuleList = new List<ConSuleItem>();
-        ConSuleItem item;
-        for (int i = 0; i < index; i++)
-        {
-            item = new ConSuleItem();
-            item.trans = GetChild<Transform>(go.transform, "Item_" + (i + 1));
-            item.color = GetChild<UISprite>(go.transform, "Item_" + (i + 1) + "/color");
-            item.name = GetChild<UILabel>(go.transform, "Item_" + (i + 1) + "/Name");
-            item.Icon = GetChild<UITexture>(go.transform, "Item_" + (i + 1) + "/icon");
-            item.count = GetChild<UILabel>(go.transform, "Item_" + (i + 1) + "/num");
-            ConSuleList.Add(item);
-        }
-        return ConSuleList;
-    }
     public static void SetSkillType(int type,UILabel label)
     {
         switch(type)

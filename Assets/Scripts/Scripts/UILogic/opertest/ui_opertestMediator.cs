@@ -50,18 +50,12 @@ public class ui_opertestMediator : UIMediator<ui_opertest> {
         CommonFun.BallToPlayerFoot();
 
         player = GameObject.Find("Player_Opponent2");
-
-        if (null != AllRef.BallPlayer)
-        {
-            //AllRef.BallPlayer.MoveToPosition = player.transform.position;
-        }
     }
 
     private void OnClick_MidToEnd(GameObject go)
     {
         GameObject player = GameObject.Find("Player_Team2");
 
-        AllRef.Ball.bPassButton = true;
     }
 
     private void OnClick_EndTo(GameObject go)
@@ -84,8 +78,7 @@ public class ui_opertestMediator : UIMediator<ui_opertest> {
 
     private void OnClick_Pass(GameObject go)
     {
-        //CommonFun.PlayerCaseControling();
-        AllRef.Ball.bPassButton = true;
+
     }
 
     private void OnClick_BallToSelPlayer(GameObject go)
@@ -100,18 +93,11 @@ public class ui_opertestMediator : UIMediator<ui_opertest> {
         int rndIndex = UnityEngine.Random.Range(0, count);
 
         GameObject player = CommonFun.Players[rndIndex];
-
-        //CommonFun.SetSelectedPlayer(player);
-        AllRef.Ball.bPassButton = true;
     }
 
     private void OnClick_Move(GameObject go)
     {
         GameObject toTarget = GameObject.Find("test_target");
 
-        if (null != AllRef.BallPlayer)
-        {
-            //AllRef.BallPlayer.MoveToPosition = toTarget.transform.position;
-        }
     }
 }

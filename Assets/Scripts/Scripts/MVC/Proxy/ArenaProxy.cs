@@ -17,31 +17,11 @@ public class ArenaProxy : Proxy<ArenaProxy>
     }
     public void onGetUpdateCD(object v)
     {
-        ArenaMediator.cdTime = int.Parse(v.ToString());
-        if (ArenaMediator.arenaMediator == null)
-            return;
-        ArenaMediator.arenaMediator.UpdateArenacd();
+
     }
     public void onGetThreeArenaValue(List<object> list)
     {
-        ArenaMediator.arenaInfoList.Clear();
-        ArenaInfo arenaInfo;
-        for (int i = 0; i < list.Count; ++i)
-        {
-            Dictionary<string, object> info = list[i] as Dictionary<string, object>;
-            arenaInfo = new ArenaInfo();
-            arenaInfo.dbid = UtilTools.IntParse(info["dbid"].ToString());
-            arenaInfo.ranking = UtilTools.IntParse(info["rank"].ToString());
-            arenaInfo.fightValue = UtilTools.IntParse(info["fightValue"].ToString());
-            arenaInfo.formation = UtilTools.IntParse(info["formation"].ToString());
-            arenaInfo.camp = UtilTools.IntParse(info["camp"].ToString());
-            arenaInfo.playerName = info["name"].ToString();
-            arenaInfo.club = info["club"].ToString();
-            ArenaMediator.arenaInfoList.Add(arenaInfo.dbid, arenaInfo);
-        }       
-        if (ArenaMediator.arenaMediator == null)
-            return;
-        ArenaMediator.arenaMediator.GetArenaRank();
+       
     }
     public void onGetArenaRankValue(List<object> list, object obj)
     {
@@ -74,8 +54,7 @@ public class ArenaProxy : Proxy<ArenaProxy>
     }
     public void onGetRecord(List<object> list)
     {
-        if (ArenaMediator.arenaMediator != null)
-            ArenaMediator.arenaMediator.GetMyRecord(list);
+      
     }
     public void onArenaCallBack(object obj)
     {

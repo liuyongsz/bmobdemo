@@ -229,7 +229,7 @@ public class PanelManager : ManagerTemplate<PanelManager>
         }
         else
         {
-            CommonFun.Debug("PanelManager SetPanel ui is Null");
+
         }
        
         return ui;

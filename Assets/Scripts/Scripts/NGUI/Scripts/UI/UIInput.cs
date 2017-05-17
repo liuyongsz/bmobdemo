@@ -573,7 +573,7 @@ public class UIInput : MonoBehaviour
             if (Config.bANYSDK)
             {
 #if UNITY_IPHONE
-			    label.text = IOSKeyBoard.mKeyOut;
+			    //label.text = IOSKeyBoard.mKeyOut;
 #endif
             }
 

@@ -6,7 +6,7 @@ using UnityEngine;
 using TinyBinaryXml;
 using UnityEngine.Events;
 
-public class TD_Monster : PlayerItem
+public class TD_Monster
 {
     public int id;
     public string name;
@@ -58,16 +58,6 @@ class MonsterConfig : ConfigBase
             item.name = node.GetStringValue("name");
             item.icon = node.GetStringValue("icon");
             item.needLv = node.GetIntValue("needLv");
-            item.shoot = node.GetIntValue("shoot");
-            item.pass = node.GetIntValue("pass");
-            item.reel = node.GetIntValue("reel");
-            item.tech = node.GetIntValue("tech");
-            item.control = node.GetIntValue("control");
-            item.def = node.GetIntValue("def");
-            item.trick = node.GetIntValue("trick");
-            item.steal = node.GetIntValue("steal");
-            item.health = node.GetIntValue("health");
-            item.keep = node.GetIntValue("keep");
 
             m_teamData[item.id] = item;
         }

@@ -438,7 +438,7 @@ public class SymbolInput : UIInput
             if (Config.bANYSDK)
             {
 #if UNITY_IPHONE
-			    newLabel.text = IOSKeyBoard.mKeyOut;
+			    //newLabel.text = IOSKeyBoard.mKeyOut;
 #endif
             }
 			

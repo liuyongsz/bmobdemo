@@ -43,12 +43,7 @@ public class ResourceManager:MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        if (MatchManager.Instace)
-        {
-            //MatchManager.LoadedInit();
-
-            GUIManager.HideLoadingUI();
-        }
+        GUIManager.HideLoadingUI();
     }
 
     private IEnumerator Initialize(System.Action Complete)

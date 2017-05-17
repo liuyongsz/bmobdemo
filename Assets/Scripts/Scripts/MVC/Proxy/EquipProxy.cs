@@ -217,7 +217,7 @@ public class EquipProxy : Proxy<EquipProxy>
     /// <param name="cardId"></param>
     public void GetquipList(int cardId)
     {
-        ServerCustom.instance.SendClientMethods(EquipProxy.CLIENT_Get_EQUIP_LIST, cardId);
+
     }
     //强化成功
     public void strongUpEquipSucc(object val, Dictionary<string, object> list)

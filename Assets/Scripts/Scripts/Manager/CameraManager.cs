@@ -39,11 +39,11 @@ public class CameraManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         updateCameraFOV();
-		Shoot.EventShoot += eventShoot;
+
 	}
 
 	void OnDestroy() {
-		Shoot.EventShoot -= eventShoot;
+
 	}
 
 	public void turnOn() {
@@ -107,47 +107,6 @@ public class CameraManager : MonoBehaviour {
     
 
 	private IEnumerator resetPosition() {
-
-		Transform ball = Shoot.share._ball.transform;
-		
-		Vector3 diff = -ball.position;
-		diff.Normalize();
-		float angleRadian = Mathf.Atan2(diff.x, diff.z);
-		float angle = angleRadian * Mathf.Rad2Deg;			// goc lech so voi goc toa do
-		angleRadian = angle * Mathf.Deg2Rad;
-		
-		Vector3 pos = ball.position;		// pos se duoc gan' la vi tri cua camera
-        pos.y = cameraMainY;			// camera cach' mat dat 1.7m
-		
-		if(isPortrait) {		// neu la portrait thi camera nam dang sau trai banh 4m va huong ve goc toa do, noi cach khac' la cung huong' voi' truc z cua parent cua ball
-            pos.x += cameraMainDistanceToBall * Mathf.Sin(angleRadian);
-            pos.z += cameraMainDistanceToBall * Mathf.Cos(angleRadian);
-		}
-		else {		// neu la landscape thi camera nam dang sau trai banh 4m va huong ve goc toa do, noi cach khac' la cung huong' voi' truc z cua parent cua ball
-            pos.x += cameraMainDistanceToBall * Mathf.Sin(angleRadian);
-            pos.z += cameraMainDistanceToBall * Mathf.Cos(angleRadian);
-		}
-		
-		_cameraMain.transform.position = pos;
-		
-		Vector3 rotation = _cameraMain.transform.eulerAngles;
-		rotation.y = angle;		
-		rotation.x = 6f;			// quay 6 do theo truc x
-		rotation.z = 0f;
-		_cameraMain.transform.eulerAngles = rotation;
-
-	    float distanceBackCameraToBall = 10f; // 18.31871f;
-
-        float x = distanceBackCameraToBall * Mathf.Sin(angleRadian);
-        float z = distanceBackCameraToBall * Mathf.Cos(angleRadian);
-
-	    if (_cameraBack)
-	    {
-		    _cameraBack.transform.position = new Vector3( x, yBackCamera, z);
-
-            Quaternion rotationLook = Quaternion.LookRotation(Shoot.share._cachedTrans.position - _cameraBack.transform.position);
-		    _cameraBack.transform.rotation = rotationLook;
-	    }
 
 		yield break;
 	}

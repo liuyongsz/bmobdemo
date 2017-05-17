@@ -17,11 +17,7 @@ class ModelCommand: SimpleCommand
         Facade.RegisterProxy(PowerProxy.Instance);
         Facade.RegisterProxy(CardProxy.Instance);
         Facade.RegisterProxy(FriendProxy.Instance);
-        Facade.RegisterProxy(BallerProxy.Instance);
-        Facade.RegisterProxy(CloneProxy.Instance);
         Facade.RegisterProxy(EquipProxy.Instance);
-        Facade.RegisterProxy(FormationProxy.Instance);
-        Facade.RegisterProxy(SkillProxy.Instance);
         Facade.RegisterProxy(CheckpointProxy.Instance);
         Facade.RegisterProxy(GameShopProxy.Instance);
         Facade.RegisterProxy(RankProxy.Instance);

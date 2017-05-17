@@ -58,8 +58,7 @@ public class PlayerProxy : Proxy<PlayerProxy>
     {
         v = entity.getDefinedProperty("arenaTimes");
         PlayerMediator.playerInfo.arenaTimes = int.Parse(v.ToString());
-        if (ArenaMediator.arenaMediator != null)
-            ArenaMediator.arenaMediator.BuyArenaTimesSucess();
+
     }
     public void set_blackMoney(KBEngine.Entity entity, object v)
     {
@@ -154,28 +153,7 @@ public class PlayerProxy : Proxy<PlayerProxy>
     }
     public void set_vipLevel(KBEngine.Entity entity, object v)
     {
-        v = entity.getDefinedProperty("vipLevel");
-        PlayerMediator.playerInfo.vipLevel = int.Parse(v.ToString());
-        int coachID = 0;
-        if (PlayerMediator.playerInfo.vipLevel >= CommonConfig.GetCommonInfo(10).value)
-        {
-            if (SkillPanel.coachInfoList[3].isLock != 1)
-                coachID = 4;
-            SkillPanel.coachInfoList[3].isLock = 1;
-        }
-        if (PlayerMediator.playerInfo.vipLevel >= CommonConfig.GetCommonInfo(11).value)
-        {
-            if (SkillPanel.coachInfoList[4].isLock != 1)
-                coachID = 5;
-            SkillPanel.coachInfoList[4].isLock = 1;
-        }
-        if (coachID != 0)
-        {
-            if (TeamMediator.skillPanel != null)
-                TeamMediator.skillPanel.UnLockCoachSucess(coachID);
-        }
-        if (MainMediator.mainMediator == null)
-            return;
+       
         Facade.SendNotification(NotificationID.Vip_Change);
     }
     public void set_job(KBEngine.Entity entity, object v)

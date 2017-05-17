@@ -185,10 +185,6 @@ public class TestPanel3 : UIBase
 
         name.text = item.oData.ToString();
         item.transform.name = item.oData.ToString();
-
-        TeamPosition info = TeamPositionConfig.GetTeamPosition(GameConvert.IntConvert(item.oData));
-        if (info != null)
-            pos.text = TextManager.GetUIString(info.name);
     }
     private void OnPressed(GameObject item, bool isPressed)
     {

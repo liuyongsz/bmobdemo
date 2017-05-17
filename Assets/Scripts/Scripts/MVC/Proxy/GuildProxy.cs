@@ -299,6 +299,7 @@ public class GuildProxy: Proxy<GuildProxy>
         } 
         else if(result == 15)
         {
+            
             GUIManager.SetJumpText(TextManager.GetSystemString("ui_system_guild" + result));
             ServerCustom.instance.SendClientMethods("onClientGetGuildValueRank", 0);
         }

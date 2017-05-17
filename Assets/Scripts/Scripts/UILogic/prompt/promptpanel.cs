@@ -24,7 +24,6 @@ public class PromptInfo
     public PromptMediator.ClickOk clickOk;
     public PromptMediator.Close close;
     public List<object> objList;
-    public Dictionary<string, PropertiesInfo> propertiesInfoList = new Dictionary<string, PropertiesInfo>();
 }
 public enum PromptType
 {
@@ -115,18 +114,7 @@ public class PromptMediator : UIMediator<promptpanel>
         }
         else if (info.type == PromptType.Properties)
         {
-            m_Panel.tishiUI.gameObject.SetActive(false);
-            m_Panel.propertiesInfo.gameObject.SetActive(true);
-            infoGrid = UtilTools.GetChild<UIGrid>(m_Panel.propertiesInfo.transform, "ScrollView/infoGrid");
-            closeBtn = UtilTools.GetChild<UISprite>(m_Panel.propertiesInfo.transform, "biaoti/closeBtn");
-            UIEventListener.Get(closeBtn.gameObject).onClick = OnClick;
-            infoGrid.enabled = true;
-            infoGrid.BindCustomCallBack(UpdatePropertiesInfoGrid);
-            infoGrid.StartCustom();
-            List<object> list = new List<object>();
-            foreach (PropertiesInfo item in info.propertiesInfoList.Values)
-                list.Add(item);
-            infoGrid.AddCustomDataList(list);
+  
         }
         else
         {
@@ -136,13 +124,7 @@ public class PromptMediator : UIMediator<promptpanel>
     }
     void UpdatePropertiesInfoGrid(UIGridItem item)
     {
-        if (item == null || item.mScripts == null || item.oData == null)
-            return;
-        PropertiesInfo info = item.oData as PropertiesInfo;
-        UILabel Name = item.mScripts[0] as UILabel;
-        UILabel value = item.mScripts[1] as UILabel;
-        Name.text = TextManager.GetUIString(info.propertiesName);
-        value.text = "+" + info.propertiesValue.ToString();
+
     }
     /// <summary>
     /// 界面关闭时调用

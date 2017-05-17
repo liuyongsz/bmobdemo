@@ -52,11 +52,6 @@ public class BagProxy : Proxy<BagProxy>
         info.itemID = list["itemID"].ToString();
         info.amount = int.Parse(list["amount"].ToString());
         BagChangeType type = BagChangeType.Null;
-        if (TeamMediator.clipList.ContainsKey(info.itemID))
-        {
-            TeamMediator.clipList[info.itemID].uuid = info.uuid;
-            TeamMediator.clipList[info.itemID].amount = info.amount;
-        }
            
         if (BagMediator.ItemList.ContainsKey(info.uuid))
         {
