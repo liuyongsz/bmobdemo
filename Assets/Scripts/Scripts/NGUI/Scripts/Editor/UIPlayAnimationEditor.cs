@@ -77,7 +77,7 @@ public class UIPlayAnimationEditor : Editor
 #endif
 			pa.clipName = clipName;
 			pa.trigger = trigger;
-			pa.playDirection =(Direction)dir;
+			pa.playDirection =(AnimationOrTween.Direction)dir;
 			pa.clearSelection = clear;
 			pa.ifDisabledOnPlay = enab;
 			pa.resetOnPlay = reset;

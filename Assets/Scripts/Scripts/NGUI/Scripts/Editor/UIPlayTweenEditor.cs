@@ -48,7 +48,7 @@ public class UIPlayTweenEditor : Editor
 			tw.tweenGroup = group;
 			tw.includeChildren = inc;
 			tw.trigger = trigger;
-			tw.playDirection = (Direction)dir;
+			tw.playDirection = (AnimationOrTween.Direction)dir;
             tw.ifDisabledOnPlay = enab;
 			tw.resetOnPlay = (reset == ResetOnPlay.Restart);
 			tw.resetIfDisabled = (reset == ResetOnPlay.RestartIfNotPlaying);

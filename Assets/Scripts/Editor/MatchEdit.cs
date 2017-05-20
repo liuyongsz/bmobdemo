@@ -22,10 +22,6 @@ public class MatchEdit : EditorWindow
 
     public void OnGUI()
     {
-        MatchManager.CloneGMType = (CloneGMFlag)EditorGUILayout.EnumPopup("sss", MatchManager.CloneGMType);
-
-        if (GUILayout.Button("发送"))
-            SkillProxy.Instance.onCloneGM(MatchManager.CloneGMType);
 
         EditorGUILayout.Space();
 
@@ -88,51 +84,15 @@ public class MatchEdit : EditorWindow
 
         //    Debug.Log("state:" + player.GetState());
         //}
-
-        skill_useId = EditorGUILayout.IntField("技能ID", skill_useId);
-
-        if (GUILayout.Button("确定"))
-        {
-            SkillProxy.Instance.onGmSetSkill(skill_useId);
-        }
-
-        if (GUILayout.Button("Test Skill Success"))
-        {
-            SkillProxy.Instance.onSkillSucc(new List<object>() { skill_useId });
-        }
     }
 
     private void Shoot()
     {
-        if (null != Ball.Instance && null != Ball.Instance.owner)
-        {
-            Player py = Ball.Instance.owner.GetComponent<Player>();
-
-            if (null != py)
-            {
-                py.Do_Shoot();
-            }
-        }
-        else
-        {
-            CommonFun.Debug("Ball or Owner is Null","#6699CC");
-        }
+        
     }
 
     private void Pass()
     {
-        if (null != Ball.Instance && null != Ball.Instance.owner)
-        {
-            Player py = Ball.Instance.owner.GetComponent<Player>();
-
-            if (null != py)
-            {
-                py.Do_Pass();
-            }
-        }
-        else
-        {
-            CommonFun.Debug("Ball or Owner is Null", "#6699CC");
-        }
+      
     }
 }
