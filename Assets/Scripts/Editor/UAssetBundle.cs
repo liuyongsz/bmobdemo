@@ -46,7 +46,7 @@ public class UAssetBundle
     public static void AssetBundle_SetNameForce()
     {
         AssetBundle_SetName(SetNameType.Force);
-        AssetBundle_SetName_XML();
+        //AssetBundle_SetName_XML();
     }
 
     private static string versionDir = "UGame";
@@ -56,7 +56,7 @@ public class UAssetBundle
 	{
 		//string fullPath = Application.dataPath + "/" + versionDir + "/";
         string fullPath = Application.dataPath + "/" + rootDir + "/";
-        int relativeLen = versionDir.Length + 9; // Assets 长度
+        int relativeLen = versionDir.Length + 6; // Assets 长度
         if (Directory.Exists(fullPath))
         {
 			DirectoryInfo dir = new DirectoryInfo(fullPath);
