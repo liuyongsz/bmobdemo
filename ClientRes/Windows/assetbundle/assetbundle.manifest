@@ -1,0 +1,58 @@
+ManifestFileVersion: 0
+CRC: 453748548
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: sample
+      Dependencies: {}
+    Info_1:
+      Name: dotweeneditor.xml
+      Dependencies: {}
+    Info_2:
+      Name: readme.txt
+      Dependencies: {}
+    Info_3:
+      Name: assetbundleserverurl.bytes
+      Dependencies: {}
+    Info_4:
+      Name: photon3unity3d.xml
+      Dependencies: {}
+    Info_5:
+      Name: readme!.txt
+      Dependencies: {}
+    Info_6:
+      Name: release_history.txt
+      Dependencies: {}
+    Info_7:
+      Name: lidgren.network.xml
+      Dependencies: {}
+    Info_8:
+      Name: dotween.xml
+      Dependencies: {}
+    Info_9:
+      Name: backgroundpanel
+      Dependencies: {}
+    Info_10:
+      Name: computerone
+      Dependencies: {}
+    Info_11:
+      Name: computertwo
+      Dependencies: {}
+    Info_12:
+      Name: gameoverpanel
+      Dependencies: {}
+    Info_13:
+      Name: interactionpanel
+      Dependencies: {}
+    Info_14:
+      Name: poker
+      Dependencies: {}
+    Info_15:
+      Name: scenepanel
+      Dependencies: {}
+    Info_16:
+      Name: startpanel
+      Dependencies: {}
+    Info_17:
+      Name: loginpanel
+      Dependencies: {}

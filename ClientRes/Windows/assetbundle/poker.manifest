@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 2689863705
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e7ecf01a2fe4c7ff92e54967bd20f2e7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 25939a9080238fffd14d5bfb7cbf6672
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c817c9f07ba6401449ca4978a7b87c8c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/UI/poker.prefab
+Dependencies: []

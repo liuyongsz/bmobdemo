@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Object>
-	<Property id="0" exp="0.5" skillExp="0.5" powerLevel="0.2" MentalityLevel="0.2" StrikeBackItem="0.5" money="30000"/>
-	<Property id="102028" exp="0.6" skillExp="0.6" powerLevel="0.4" MentalityLevel="0.4" StrikeBackItem="0.6" money="60000"/>
-	<Property id="102029" exp="0.8" skillExp="0.8" powerLevel="0.7" MentalityLevel="0.7" StrikeBackItem="0.8" money="100000"/>
-	<Property id="102030" exp="1" skillExp="1" powerLevel="0.9" MentalityLevel="0.9" StrikeBackItem="1" money="200000"/>
-	</Object>

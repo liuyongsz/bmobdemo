@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Object>
-	<Property id="1" name="Suit1" equiq="101301,101302,101303,101304,101305" suitadd="900,900,1000,7.5"/>
-	<Property id="2" name="Suit2" equiq="101401,101402,101403,101404,101405" suitadd="900,900,500,7.5"/>
-	<Property id="3" name="Suit3" equiq="101501,101502,101503,101504,101505" suitadd="500,500,7.5,500"/>
-</Object>
- 
