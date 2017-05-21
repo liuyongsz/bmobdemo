@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object>
+	<Property id="10005" addvalue="100" lockvalue="100" cost="102013,1;102014,1;102015,1"/>
+	<Property id="10006" addvalue="120" lockvalue="120" cost="0"/>
+	<Property id="11005" addvalue="100" lockvalue="1" cost="102013,1;102014,1;102015,1"/>
+	<Property id="11006" addvalue="120" lockvalue="2" cost="0"/>
+	<Property id="12005" addvalue="100" lockvalue="100" cost="102013,1;102014,1;102015,1"/>
+	<Property id="12006" addvalue="120" lockvalue="120" cost="0"/>
+	<Property id="13005" addvalue="100" lockvalue="1" cost="102013,1;102014,1;102015,1"/>
+	<Property id="13006" addvalue="120" lockvalue="2" cost="0"/>
+	<Property id="14005" addvalue="100" lockvalue="1" cost="102013,1;102014,1;102015,1"/>
+	<Property id="14006" addvalue="120" lockvalue="2" cost="0"/>
+	<Property id="20005" addvalue="100" lockvalue="100" cost="102013,1;102014,1;102015,1"/>
+	<Property id="20006" addvalue="120" lockvalue="120" cost="0"/>
+	<Property id="21005" addvalue="100" lockvalue="1" cost="102013,1;102014,1;102015,1"/>
+	<Property id="21006" addvalue="120" lockvalue="2" cost="0"/>
+	<Property id="22005" addvalue="100" lockvalue="100" cost="102013,1;102014,1;102015,1"/>
+	<Property id="22006" addvalue="120" lockvalue="120" cost="0"/>
+	<Property id="23005" addvalue="100" lockvalue="1" cost="102013,1;102014,1;102015,1"/>
+	<Property id="23006" addvalue="120" lockvalue="2" cost="0"/>
+	<Property id="24005" addvalue="100" lockvalue="1" cost="102013,1;102014,1;102015,1"/>
+	<Property id="24006" addvalue="120" lockvalue="2" cost="0"/>
+	</Object>
