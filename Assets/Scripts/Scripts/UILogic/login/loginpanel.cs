@@ -50,9 +50,9 @@ public class LoginMediator : UIMediator<loginpanel>
 
     protected override void AddComponentEvents()
     {
-        UIEventListener.Get(m_Panel.btnClose.gameObject).onClick = OnClick;
-        UIEventListener.Get(m_Panel.btnEnter.gameObject).onClick = OnClick;
-        UIEventListener.Get(m_Panel.btnReg.gameObject).onClick = OnClick;
+        //UIEventListener.Get(m_Panel.btnClose.gameObject).onClick = OnClick;
+        //UIEventListener.Get(m_Panel.btnEnter.gameObject).onClick = OnClick;
+        //UIEventListener.Get(m_Panel.btnReg.gameObject).onClick = OnClick;
 
     }
     /// <summary>

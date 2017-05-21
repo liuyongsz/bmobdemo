@@ -6,7 +6,7 @@ public abstract class ManagerTemplate<T> : MonoBehaviourSingleton<T> where T : M
 {
     protected sealed override void OnCreateInstance()
     {
-        InitManager();
+        //InitManager();
     }
 
     protected abstract void InitManager();
