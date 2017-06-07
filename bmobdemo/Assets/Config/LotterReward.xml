@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object>
+
+	<Property ItemID="102001" Switch="0" Type="2"/>
+	<Property ItemID="102002" Switch="0" Type="2"/>
+	<Property ItemID="102003" Switch="0" Type="2"/>
+	<Property ItemID="102004" Switch="0" Type="2"/>
+	<Property ItemID="102005" Switch="0" Type="2"/>
+	<Property ItemID="102006" Switch="0" Type="2"/>
+	<Property ItemID="102007" Switch="0" Type="2"/>
+	<Property ItemID="102008" Switch="0" Type="2"/>
+	<Property ItemID="102009" Switch="0" Type="2"/>
+	<Property ItemID="102010" Switch="0" Type="2"/>
+	<Property ItemID="102011" Switch="0" Type="2"/>
+	<Property ItemID="102012" Switch="0" Type="2"/>
+	<Property ItemID="102013" Switch="0" Type="2"/>
+	<Property ItemID="102014" Switch="0" Type="2"/>
+	<Property ItemID="102015" Switch="0" Type="2"/>
+	<Property ItemID="102016" Switch="0" Type="2"/>
+	<Property ItemID="102017" Switch="0" Type="2"/>
+	<Property ItemID="102018" Switch="0" Type="2"/>
+	<Property ItemID="102019" Switch="0" Type="2"/>
+	<Property ItemID="102020" Switch="0" Type="2"/>
+	<Property ItemID="102021" Switch="0" Type="2"/>
+	<Property ItemID="102022" Switch="0" Type="2"/>
+	<Property ItemID="102023" Switch="0" Type="2"/>
+	<Property ItemID="102024" Switch="0" Type="2"/>
+	<Property ItemID="102025" Switch="0" Type="2"/>
+	<Property ItemID="102026" Switch="0" Type="2"/>
+	<Property ItemID="102027" Switch="0" Type="2"/>
+	<Property ItemID="102028" Switch="0" Type="2"/>
+	<Property ItemID="102029" Switch="0" Type="2"/>
+	<Property ItemID="102030" Switch="0" Type="2"/>
+	<Property ItemID="102031" Switch="0" Type="2"/>
+	<Property ItemID="102032" Switch="0" Type="2"/>
+	<Property ItemID="1001" Switch="10" Type="7"/>
+	<Property ItemID="1002" Switch="10" Type="7"/>
+	<Property ItemID="1003" Switch="10" Type="7"/>
+	<Property ItemID="1004" Switch="10" Type="7"/>
+	<Property ItemID="1005" Switch="10" Type="7"/>
+	<Property ItemID="1006" Switch="10" Type="7"/>
+	<Property ItemID="1007" Switch="10" Type="7"/>
+	</Object>

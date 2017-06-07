@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object>
+
+	<Property id="1" addvalue="shoot,100;passBall,100" reward="102003,1;102004,1" suiName="Suit4" spriteName="sui1"/>
+	<Property id="2" addvalue="shoot,200;passBall,200" reward="102003,2;102004,2" suiName="Suit5" spriteName="sui2"/>
+	</Object>

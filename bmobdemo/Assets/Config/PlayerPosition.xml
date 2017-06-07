@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--球员职位
+pos      		位置索引
+atkPer   		攻击系数
+defPer   		防御系数
+controlPer  	控球系数
+passPer    		传球系数
+atkEnable     	是否参与进攻 0不能 1可以
+adaptDef 可参与防守球员的范围 对应MatchArray表中在位置上的球员
+-->
+<Object>
+	<Property pos="1" atkPer="0" defPer="0" controlPer="0" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="2" atkPer="0.1" defPer="0.9" controlPer="0.1" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="3" atkPer="0" defPer="1" controlPer="0" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="4" atkPer="0" defPer="1" controlPer="0" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="5" atkPer="0" defPer="1" controlPer="0" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="6" atkPer="0.1" defPer="0.9" controlPer="0.1" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="7" atkPer="0.3" defPer="0.7" controlPer="0.2" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="8" atkPer="0.2" defPer="0.8" controlPer="0.3" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="9" atkPer="0.2" defPer="0.8" controlPer="0.3" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="10" atkPer="0.2" defPer="0.8" controlPer="0.3" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="11" atkPer="0.3" defPer="0.7" controlPer="0.2" passPer="0" atkEnable="0" adaptDef=""/>
+	<Property pos="12" atkPer="0.5" defPer="0.5" controlPer="0.4" passPer="0.5" atkEnable="1" adaptDef="16,11,15,6,21"/>
+	<Property pos="13" atkPer="0.5" defPer="0.5" controlPer="0.5" passPer="0.3" atkEnable="1" adaptDef="15,10,14,16,20"/>
+	<Property pos="14" atkPer="0.5" defPer="0.5" controlPer="0.5" passPer="0.3" atkEnable="1" adaptDef="14,15,13,10,8"/>
+	<Property pos="15" atkPer="0.5" defPer="0.5" controlPer="0.5" passPer="0.3" atkEnable="1" adaptDef="13,8,14,12,18"/>
+	<Property pos="16" atkPer="0.5" defPer="0.5" controlPer="0.4" passPer="0.5" atkEnable="1" adaptDef="12,7,13,2,17"/>
+	<Property pos="17" atkPer="0.8" defPer="0.2" controlPer="0.4" passPer="0.8" atkEnable="1" adaptDef="11,6,5,16"/>
+	<Property pos="18" atkPer="0.9" defPer="0.1" controlPer="0.5" passPer="1" atkEnable="1" adaptDef="10,9,11,15,14"/>
+	<Property pos="19" atkPer="0.9" defPer="0.1" controlPer="0.5" passPer="1" atkEnable="1" adaptDef="9,10,8,14,15,13"/>
+	<Property pos="20" atkPer="0.9" defPer="0.1" controlPer="0.5" passPer="1" atkEnable="1" adaptDef="8,9,7,13,14"/>
+	<Property pos="21" atkPer="0.8" defPer="0.2" controlPer="0.4" passPer="0.8" atkEnable="1" adaptDef="7,2,3,12"/>
+	<Property pos="22" atkPer="1" defPer="0" controlPer="0.4" passPer="0.5" atkEnable="1" adaptDef="3,2,4,8"/>
+	<Property pos="23" atkPer="1" defPer="0" controlPer="0.4" passPer="0.5" atkEnable="1" adaptDef="4,5,3,9"/>
+	<Property pos="24" atkPer="1" defPer="0" controlPer="0.4" passPer="0.5" atkEnable="1" adaptDef="5,6,4,10"/>
+	
+</Object>
