@@ -11,10 +11,10 @@ using XLua;
 public class loginpanel : BasePanel {
 
     public UISprite btnClose;
-    public UISprite btnEnter;
+    public UIButton btnBegin;
     public UISprite btnReg;
-    public UIInput iptUser;
-    public UIInput iptPwd;
+    public UIInput txtAccount;
+    public UIInput txtPassword;
 }
 
 [Hotfix]
@@ -39,19 +39,21 @@ public class LoginMediator : UIMediator<loginpanel>
     {
         if (PlayerPrefs.HasKey("UserName") && PlayerPrefs.HasKey("UserPass"))
         {
-            panel.iptUser.value = PlayerPrefs.GetString("UserName");
-            user = panel.iptUser.value;
-            panel.iptPwd.value = PlayerPrefs.GetString("UserPass");
-            pass = panel.iptPwd.value;
+            panel.txtPassword.value = PlayerPrefs.GetString("UserName");
+            user = panel.txtPassword.value;
+            panel.txtPassword.value = PlayerPrefs.GetString("UserPass");
+            pass = panel.txtPassword.value;
         }
 
         Facade.SendNotification(NotificationID.UpdateResources_Close);
+
+        KBEMain.StartClientap("192.168.1.106");
     }
 
     protected override void AddComponentEvents()
     {
         //UIEventListener.Get(m_Panel.btnClose.gameObject).onClick = OnClick;
-        //UIEventListener.Get(m_Panel.btnEnter.gameObject).onClick = OnClick;
+        UIEventListener.Get(m_Panel.btnBegin.gameObject).onClick = OnClick;
         //UIEventListener.Get(m_Panel.btnReg.gameObject).onClick = OnClick;
 
     }
@@ -60,29 +62,32 @@ public class LoginMediator : UIMediator<loginpanel>
     /// </summary>
     private void OnClick(GameObject go)
     {
-        if (go == panel.btnClose.gameObject)
+        //if (go == panel.btnClose.gameObject)
+        //{
+        //    ClosePanel(null);
+        //}
+        //else 
+        if (go == panel.btnBegin.gameObject)
         {
-            ClosePanel(null);
-        }
-        else if (go == panel.btnEnter.gameObject)
-        {
-            if (panel.iptUser.value.Trim(' ') == string.Empty || panel.iptPwd.value.Trim(' ') == string.Empty)
+            if (panel.txtAccount.value.Trim(' ') == string.Empty || panel.txtPassword.value.Trim(' ') == string.Empty)
             {
                 GUIManager.SetPromptInfo(TextManager.GetUIString("UIServer1"), null);
                 return;
             }
-            user = panel.iptUser.value.Trim(' ');
-            pass = panel.iptPwd.value.Trim(' ');
+            user = panel.txtAccount.value.Trim(' ');
+            pass = panel.txtPassword.value.Trim(' ');
             PlayerPrefs.SetString("UserName", user);
             PlayerPrefs.SetString("UserPass", pass);
             List<object> list = new List<object>();
             list.Add(user);
             list.Add(pass);
-            Facade.SendNotification(NotificationID.Sever_Show, list);
+            //Facade.SendNotification(NotificationID.Sever_Show, list);
+
+            LoginProxy.Instance.Send_Login(user, pass);
         }
         else if (go == panel.btnReg.gameObject)
         {
-            LoginProxy.Instance.Send_RegisterAccount(m_Panel.iptUser.text.Trim(), m_Panel.iptPwd.text.Trim());
+           // LoginProxy.Instance.Send_RegisterAccount(m_Panel.iptUser.text.Trim(), m_Panel.iptPwd.text.Trim());
         }
     }
 
