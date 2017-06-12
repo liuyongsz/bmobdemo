@@ -1,58 +1,58 @@
 ManifestFileVersion: 0
-CRC: 453748548
+CRC: 4016842368
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: sample
       Dependencies: {}
     Info_1:
-      Name: dotweeneditor.xml
-      Dependencies: {}
-    Info_2:
-      Name: readme.txt
-      Dependencies: {}
-    Info_3:
-      Name: assetbundleserverurl.bytes
-      Dependencies: {}
-    Info_4:
-      Name: photon3unity3d.xml
-      Dependencies: {}
-    Info_5:
-      Name: readme!.txt
-      Dependencies: {}
-    Info_6:
-      Name: release_history.txt
-      Dependencies: {}
-    Info_7:
-      Name: lidgren.network.xml
-      Dependencies: {}
-    Info_8:
-      Name: dotween.xml
-      Dependencies: {}
-    Info_9:
-      Name: backgroundpanel
-      Dependencies: {}
-    Info_10:
-      Name: computerone
-      Dependencies: {}
-    Info_11:
-      Name: computertwo
-      Dependencies: {}
-    Info_12:
-      Name: gameoverpanel
-      Dependencies: {}
-    Info_13:
-      Name: interactionpanel
-      Dependencies: {}
-    Info_14:
-      Name: poker
-      Dependencies: {}
-    Info_15:
       Name: scenepanel
       Dependencies: {}
-    Info_16:
+    Info_2:
+      Name: poker
+      Dependencies: {}
+    Info_3:
+      Name: computertwo
+      Dependencies: {}
+    Info_4:
+      Name: loginpanel
+      Dependencies: {}
+    Info_5:
+      Name: gameoverpanel
+      Dependencies: {}
+    Info_6:
+      Name: backgroundpanel
+      Dependencies: {}
+    Info_7:
       Name: startpanel
       Dependencies: {}
+    Info_8:
+      Name: computerone
+      Dependencies: {}
+    Info_9:
+      Name: interactionpanel
+      Dependencies: {}
+    Info_10:
+      Name: dotweeneditor.xml
+      Dependencies: {}
+    Info_11:
+      Name: readme.txt
+      Dependencies: {}
+    Info_12:
+      Name: assetbundleserverurl.bytes
+      Dependencies: {}
+    Info_13:
+      Name: photon3unity3d.xml
+      Dependencies: {}
+    Info_14:
+      Name: readme!.txt
+      Dependencies: {}
+    Info_15:
+      Name: release_history.txt
+      Dependencies: {}
+    Info_16:
+      Name: lidgren.network.xml
+      Dependencies: {}
     Info_17:
-      Name: loginpanel
+      Name: dotween.xml
       Dependencies: {}
